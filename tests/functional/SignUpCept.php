@@ -2,7 +2,7 @@
 $I = new FunctionalTester($scenario);
 $I->wantTo('perform actions and see result');
 
-$I->am('a gueest');
+$I->am('a guest');
 $I->wantTo('Sign up for a larabook account');
 
 $I->amOnPage('/');

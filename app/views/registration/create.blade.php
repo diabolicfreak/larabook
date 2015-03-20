@@ -6,30 +6,30 @@
             <h1>Register</h1>
 
             @include('layouts.partials.errors')
-    
+
             {{ Form::open(['route' => 'register_path']) }}
             <!-- Username Form Input -->
             <div class="form-group">
                 {{ Form::label('username', 'Username:') }}
-                {{ Form::text('username', null, ['class'=>'form-control'])  }}
+                {{ Form::text('username', null, ['class'=>'form-control', 'placeholder'=>'Username'])  }}
             </div>
 
             <!-- Email Form Input -->
             <div class="form-group">
                 {{ Form::label('email', 'Email:') }}
-                {{ Form::text('email', null, ['class'=>'form-control'])  }}
+                {{ Form::text('email', null, ['class'=>'form-control', 'placeholder'=>'Email'])  }}
             </div>
 
             <!-- Password Form Input -->
             <div class="form-group">
                 {{ Form::label('password', 'Password:') }}
-                {{ Form::text('password', null, ['class'=>'form-control'])  }}
+                {{ Form::password('password', ['class'=>'form-control', 'placeholder'=>'Password'])  }}
             </div>
 
             <!-- Password Confirmation Form Input -->
             <div class="form-group">
                 {{ Form::label('password_confirmation', 'Password Confirmation:') }}
-                {{ Form::text('password_confirmation', null, ['class'=>'form-control'])  }}
+                {{ Form::password('password_confirmation', ['class'=>'form-control', 'placeholder'=>'Confirm Password'])  }}
             </div>
 
             <div class="form-group">
