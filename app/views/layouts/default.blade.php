@@ -32,6 +32,7 @@
     @include('layouts.partials.nav')
 
     <div class="container">
+     @include('flash::message')
 
      @yield('content')
 
@@ -43,6 +44,9 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script>
+        $('#flash-overlay-modal').modal();
+    </script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
   </body>

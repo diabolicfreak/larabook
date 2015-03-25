@@ -19,6 +19,8 @@ class RegistrationController extends \BaseController {
     function __construct(RegistrationForm $registrationForm)
     {
         $this->registrationForm = $registrationForm;
+
+        $this->beforeFilter('guest');
     }
 
     /**
@@ -48,6 +50,8 @@ class RegistrationController extends \BaseController {
 
 
         Auth::login($user);
+
+        Flash::overlay('We are glad to have you', 'Welcome');
 
         return Redirect::home();
     }
