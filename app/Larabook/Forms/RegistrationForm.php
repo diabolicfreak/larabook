@@ -1,12 +1,7 @@
 <?php namespace Larabook\Forms;
 use Laracasts\Validation\FormValidator;
 
-/**
- * Created by PhpStorm.
- * User: diabolicfeak
- * Date: 12/24/2014
- * Time: 5:44 PM
- */
+
 
 class RegistrationForm extends FormValidator {
 
